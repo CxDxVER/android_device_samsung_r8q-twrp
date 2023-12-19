@@ -47,3 +47,9 @@ on fs
 
 on property:ro.build.version.security_patch=*
     setprop ro.vendor.build.security_patch ${ro.build.version.security_patch}
+
+on property:ro.product.device=r8qxx
+    setprop ro.display.series Samsung Galaxy S20 FE
+
+on property:ro.product.device=r8qxxx
+    setprop ro.display.series Samsung Galaxy S20 FE 5G
