@@ -53,9 +53,14 @@ on property:ro.build.version.security_patch=*
 
 service vendor.mdm_helper /system/bin/mdm_helper
     class core
-    group system wakelock shell
+    user root
+    group root
     disabled
+    seclabel u:r:recovery:s0
 
 service vendor.mdm_launcher /system/bin/sh /system/bin/init.mdm.sh
     class core
+    user root
+    group root
     oneshot
+    seclabel u:r:recovery:s0
