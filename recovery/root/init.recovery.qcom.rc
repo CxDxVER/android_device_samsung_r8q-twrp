@@ -50,3 +50,12 @@ on boot
 
 on property:ro.build.version.security_patch=*
     setprop ro.vendor.build.security_patch ${ro.build.version.security_patch}
+
+service vendor.mdm_helper /system/bin/mdm_helper
+    class core
+    group system wakelock shell
+    disabled
+
+service vendor.mdm_launcher /system/bin/sh /system/bin/init.mdm.sh
+    class core
+    oneshot
