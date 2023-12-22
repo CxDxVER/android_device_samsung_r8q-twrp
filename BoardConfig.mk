@@ -156,7 +156,7 @@ TW_FORCE_KEYMASTER_VER := true
 TW_FRAMERATE := 60
 
 # TWRP Configuration: Brightness/CPU
-TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone17/temp
+TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone28/temp
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 486
 TW_DEFAULT_BRIGHTNESS := 219
