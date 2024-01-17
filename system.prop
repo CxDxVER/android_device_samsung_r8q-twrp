@@ -1,5 +1,5 @@
 # Device release name
-ro.display.series=Samsung Galaxy S20 FE
+ro.display.series=Samsung Galaxy S20 FE 5G
 
 # product/board stuff
 ro.product.board=kona
